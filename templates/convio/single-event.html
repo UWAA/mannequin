@@ -274,6 +274,26 @@
                 /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
                 #bodyCell{padding:10px !important;}
             }
+            
+            @media screen and (max-width:550px) { 
+                
+                .image-column img {
+                    width: 100% !important;
+                }
+                
+                
+                .stack-column {
+                    display: block !important;
+                    width: 100% !important;
+                }
+            
+                .action-button img {
+                    Margin: 0 auto !important;
+                }
+                
+                .action-button td {
+                    padding: 0 20px 20px 20px !important;
+                }
 
             @media screen and (max-width:480px) {
       
@@ -356,15 +376,15 @@
                     </tr>
                 </table>
                 
-                <!-- Start UWAA 3px Seperator -->
-                
-                <table border="0" cellspacing="0" cellpadding="0" width="100%" height="3px" bgcolor="#a7a9ab">
+               <!--UNIT NAME-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" >
                     <tr>
-                        <td height="3" bgcolor="#a7a9ab" style="font-size: 3px; line-height: 3px;">&nbsp;</td>
+                        <td valign="top" class="text unit-name" style="background-color: #ffffff; color: #4b2e84; font-family: 'Open Sans', arial, helvetica, sans-serif;  font-size: 14px; font-weight: 600; line-height: 1.2; text-transform: uppercase; text-align: right; padding: 12px 15px; vertical-align: middle;">
+                                {Unit Name}
+                        </td>
                     </tr>
                 </table>
-                
-                <!-- End UWAA 3px Seperator -->
+                <!--END UNIT NAME-->
                 
                  
               <!-- 
@@ -384,8 +404,54 @@
                         All Mannequin Snippets go below this comment.
         ||||||||||||||||||||||||||||||||||||||||||||||||||||||
         VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV-->
+                <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+SINGLE-EVENT TWO COLUMN LAYOUT 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background">
+                    <tr>
+                        
+                        <!--IMAGE COLUMN-->
+                        <td align="center" class="column-2 stack-column image-column" style="width: 50%; background-color: #ffffff;">
+                            
+                            <img src="https://depts.washington.edu/alumni/assets/elements/email/FPO/photo_fpo_450x375-1.5x.jpg" alt="image" width="300" style="display: block; color: #444444;  font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 600; font-size: 14px; height: auto; line-height: 18px; text-align: center; text-transform: uppercase; vertical-align: middle; height: auto;"/>
+                        </td>
+                        <!--END IMAGE COLUMN-->
+                        
+                        
+                        
+                        <!--START TEXT COLUMN-->
+                        <td align="center" valign="top" class="column-2 stack-column" style="background-color: #ffffff;">
+                            
+                            <!--BODY TEXT - TEXT COLUMN-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="body-text">
+                                <tr>
+                                    <td class="text body-copy" style="color: #3d3d3d; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 170%; text-align: left; padding: 20px 20px 10px 20px; vertical-align: top;">
+                                        Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum inissum conem latum fugitecus. Mus es eipcipit atisquis aliassimo maximpe.
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--END BODY TEXT - TEXT COLUMN-->
+                            
+                            
+                            <!--CALL TO ACTION BUTTON - TEXT COLUMN-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100% " align="center" class="action-button">
+                                <tr>
+                                    <td style="padding: 10px 20px 10px 20px;">
+                                        <img src="http://depts.washington.edu/alumni/assets/elements/email/buttons/btn_learn_more_purple.jpg" alt="call to action"  width="180" style="color: #444444; display: block; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 18px; font-weight: 800; text-transform: uppercase; vertical-align: middle;"/>  
+                                    </td>
+                                </tr>
+                            </table>                            
+                            
+                        </td>
+                        
+                        
+                    </tr>
+                </table>
+                <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+END SINGLE-EVENT TWO COLUMN LAYOUT 
+NEXT MANNEQUIN SNIPPET - TABLE - GOES BELOW
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
                 
-      
                 
         <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             ||||||||||||||||||||||||||||||||||||||||||||||||
@@ -398,12 +464,12 @@
 
                         <!--UW HOME FOOTER LINK-->
                         <td align="center" valign="top" class="text stack-column column-3" style="background-color: #8d9194; padding: 4px 0; font-family:'Open Sans', arial, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
-                            <a href="http://www.washington.edu/alumni" class="apple-link-white" style="color: #ffffff; text-decoration: none;">UWAA Home</a> 
+                            <a href="http://www.washington.edu/" class="apple-link-white" style="color: #ffffff; text-decoration: none;">UW Home</a> 
                         </td>
 
                         <!--DEPARTMENT HOME FOOTER LINK-->
                         <td align="center" valign="top" class="text stack-column column-3" style="background-color: #8d9194; padding: 4px 0; font-family:'Open Sans', arial, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
-                            <a href="http://www.washington.edu/alumni/membership/get-the-app/" class="apple-link-white" target="_blank" style="color: #ffffff; text-decoration: none;">Get the app</a> 
+                            <a href="{unit link}" class="apple-link-white" target="_blank" style="color: #ffffff; text-decoration: none;">{unit link}</a> 
                         </td>
 
 
