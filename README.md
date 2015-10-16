@@ -4,4 +4,3 @@ A modular HTML e-mail templating system built by the University of Washington fo
 Project Team:  
 Design: Jane Higgins  
 Development: Jenny Acevedo-Barga, Benjamin Erickson
-

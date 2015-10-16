@@ -1,0 +1,1 @@
+These templates contain markup tags compatible with Convio Luminate. 
