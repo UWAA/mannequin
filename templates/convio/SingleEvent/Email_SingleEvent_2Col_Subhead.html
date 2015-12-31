@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+        <!--[if mso]>
+            <style type="text/css">
+                .text {
+                    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+                }
+            </style>
+        <![endif]-->
+        <!--[if (mso 12)|(mso 14)|(mso 15)]>
+            <style type="text/css">
+                .text {
+                    font-family: Arial, Helvetica, sans-serif !important;
+                }
+            </style>
+        <![endif]-->
+        
+        <style>  
+         /*import open sans from google fonts */   
+         @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,800,400);   
+            /* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+            #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+            .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+            .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+            body, table, td, p, a, li, blockquote{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+            table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+            img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+            /* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+            body{margin:0; padding:0;}
+            img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+            table{border-collapse:collapse !important;}
+            body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+            
+            @-ms-viewport { 
+                width: device-width; 
+            }
+            /* /\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/ */ 
+            html, body {
+                margin: 0; 
+                padding: 0;
+                min-width: 100%;
+                mso-line-height-rule: exactly;
+            }
+            /* /\/\/\/\/\/\/ TYPOGRAPHIC STYLES /\/\/\/\/\/\/ */ 
+            h1 {
+                color: #ffffff;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 1.1;  
+            }
+            
+            h2 {
+                color: #ffffff;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.2;  
+            }
+            
+            p {
+                color: #3d3d3d;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 1.7;
+            }
+            
+            table {
+                margin: 0 auto !important;
+            }
+            a {
+                  color: #0088dd;
+                text-decoration: none;
+            }
+            a:hover, a:focus {
+                  color: #85754d;
+                border-bottom: 1px solid #BDBDBD;
+            }
+            
+            /* Forces link color to be white, instead of Apple's default blue */
+            .apple-link-white {
+                color: #ffffff !important;
+            }
+            
+            /* Forces link color to be grey, instead of Apple's default blue */
+            .apple-link-grey {
+                color: #3d3d3d !important;
+            }
+            /* /\/\/\/\/\/\/ TABLE ELEMENTS /\/\/\/\/\/\/ */
+            .column-2 {
+                width: 50%;
+            }
+            
+            .column-3 {
+                width: 33.33%;    
+            }
+            
+            .column-4 {
+                width: 25%;
+            }
+            .border {
+                border: 1px solid #d2d2d2;
+            }
+             
+            .purple-header img {
+                display: block;
+                text-align:left;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-weight: 700;
+                font-size: 14px; 
+                line-height: 1.2; 
+                text-transform: uppercase;
+                color: #ffffff;
+                vertical-align: middle; 
+                letter-spacing: 1px;
+                border: none;            
+            }
+            
+            .purple-header td {
+                background-color: #4b2e83; 
+                padding: 8px 0;
+                
+            }
+            
+            .unit-name {
+                font-weight: 600 !important;
+            }
+            
+            .headline-image td {
+                background-color: #cccccc;
+            }
+            
+            .headline-image img {
+                  color: #444444; 
+                display: block;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-weight: 600;
+                font-size: 14px;
+                height: auto;
+                line-height: 18px;
+                max-width: 600px;
+                text-align: center; 
+                   text-transform: uppercase;
+                vertical-align: middle;     
+            }
+            
+            .action-button td {
+                padding: 22px 0px 40px 0px;
+            }
+            
+            .action-button img {
+                color: #444444;
+                display: block;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 18px;
+                font-weight: 800; 
+                text-align: center;
+                text-transform: uppercase;
+                vertical-align: middle;
+                
+            }
+            
+            .grey-bar-footer a {
+                color: #ffffff;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 1.2;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                vertical-align: middle;    
+            }
+            
+            .grey-bar-footer td {
+                  padding: 4px 0;
+            }
+            
+            .contact-footer {
+                padding: 15px 0;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 1.2;
+                text-align: center !important;
+                color: #3d3d3d !important;
+                vertical-align: middle;
+            }
+            
+            .social-icon-table img {
+                color: #444444;
+                display: block;
+                font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 9px;
+                font-weight: 600; 
+                text-align: center; 
+                 text-transform: uppercase;
+                vertical-align: middle;
+                width: 25px;
+                
+            }
+            
+            .anti-spam-row td {
+                background-color: #d2d2d2;
+                color: #3d3d3d;
+                 font-family: 'Open Sans', arial, helvetica, sans-serif;
+                font-size: 9px;
+                font-weight: 400;
+                 line-height: 2.5;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .anti-spam-row a {
+                color: #3d3d3d !important;
+                text-decoration: none !important;
+            }
+            
+            .anti-spam-links td {
+                padding: 16px 15px 8px 15px;
+   
+            }
+            
+             /* /\/\/\/\/\/\/ TABLE STYLISTIC ELEMENTS /\/\/\/\/\/\/ */ 
+            .white-background td {
+                background-color: #ffffff;
+            }
+            
+            .purple-background td {
+                background-color: #4b2e83;
+            }
+            
+            .dark-gold-background td {
+                background-color: #b7a57a;
+            }
+            
+            .light-gold-background td {
+                background-color: #e8e3d3;
+            }
+            .dark-grey-background td {
+                background-color: #444444;
+            }
+            
+            .cool-grey-background td {
+                background-color: #8d9194;
+            }
+             
+            /* /\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/ */ 
+            @media only screen and (max-width: 480px){
+                /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+                body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+                body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+                /* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
+                #bodyCell{padding:10px !important;}
+            }
+            
+            @media screen and (max-width:550px) { 
+                
+                .image-column img {
+                    width: 100% !important;
+                }
+                
+                
+                .stack-column {
+                    display: block !important;
+                    width: 100% !important;
+                }
+            
+                .action-button img {
+                    Margin: 0 auto !important;
+                }
+                
+                .action-button td {
+                    padding: 0 20px 20px 20px !important;
+                }
+            @media screen and (max-width:480px) {
+      
+                .stack-column {
+                    display: block !important;
+                    width: 100% !important;
+                }
+                .unit-name {
+                    text-align: center !important;
+                }
+                 .subhead {
+                    font-size: 15px !important;
+                }
+                .body-copy, p {
+                    font-size: 14px !important;
+                    line-height: 160% !important;
+                    text-align: left !important;
+                    
+                }
+                
+                .grey-bar-footer a {
+                    font-size: 13px !important;
+                    line-height: 2 !important;
+                }
+                
+                .contact-footer {
+                    font-size: 13px !important;
+                    line-height: 2 !important;
+                    padding: 4px 0 !important;
+                    
+                }
+            
+            }
+            @media screen and (max-width:395px) {
+                .anti-spam-links {
+                    padding: 16px 35px 8px 35px !important;
+                }
+                .anti-spam-links a {
+                    padding: 0 8px  !important;
+                }  
+            }
+            
+        </style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#d2d2d2" style="margin: 0; padding: 0; background-color: #d2d2d2; background: #d2d2d2;">
+    <!--PREHEADER TEXT-->
+    <div style="display: none; font-size: 0px; line-height: 0px; max-height: 0px; max-width: 0px; width: 0px; opacity: 0; overflow: hidden">
+    </div>
+    <!--BODY TABLE WRAPPER-->
+    <table id="bodyTable" border="0" cellspacing="0" cellpadding="0" width="100%" valign="top" align="center" bgcolor="#d2d2d2" style="background-color: #d2d2d2;">
+        <tr>
+            <td>
+            <!--BEGIN TEMPLATE WRAPPER-->
+            <table align="center" cellpadding="0" cellspacing="0"  width="100%" class="border" style="max-width:600px !important; font-size: 0px !important; line-height: 0px !important;">
+            <tr>
+            <td align="center" valign="top">
+            <!--[if gte mso 9]>
+            <table align="center" cellpadding="0" cellspacing="0" width="600" class="border">
+            <tr>
+            <td>
+            <![endif]-->
+                <!--PURPLE HEADER-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="purple-header">
+                    <tr>
+                        <td valign="top" style="background-color: #4b2e83; padding: 12px 0;">  
+                            <img src="https://depts.washington.edu/alumni/assets/elements/email/logos/Logo_UW.png" alt="University of Washington" width="257"  style="display: block; text-align: left; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 700; font-size: 14px; line-height: 1.2; text-transform: uppercase; color: #ffffff; vertical-align: middle; letter-spacing: 1px; border: none;"/>
+                        </td>
+                    </tr>
+                </table>
+                
+               <!--UNIT NAME-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" >
+                    <tr>
+                        <td valign="top" class="text unit-name" style="background-color: #ffffff; color: #4b2e83; font-family: 'Open Sans', arial, helvetica, sans-serif;  font-size: 14px; font-weight: 600; line-height: 1.2; text-transform: uppercase; text-align: right; padding: 12px 15px; vertical-align: middle;">
+                                {Unit Name}
+                        </td>
+                    </tr>
+                </table>
+                <!--END UNIT NAME-->
+                
+                 
+              <!-- 
+                    ____            _           _   
+                    |  _ \ _ __ ___ (_) ___  ___| |_ 
+                    | |_) | '__/ _ \| |/ _ \/ __| __|
+                    |  __/| | | (_) | |  __/ (__| |_ 
+                    |_|   |_|  \___// |\___|\___|\__|
+                                  |__/               
+                     __  __                                    _       
+                    |  \/  | __ _ _ __  _ __   ___  __ _ _   _(_)_ __  
+                    | |\/| |/ _` | '_ \| '_ \ / _ \/ _` | | | | | '_ \ 
+                    | |  | | (_| | | | | | | |  __/ (_| | |_| | | | | |
+                    |_|  |_|\__,_|_| |_|_| |_|\___|\__, |\__,_|_|_| |_|
+                                  |_|   
+                        All Mannequin Snippets go below this comment.
+        ||||||||||||||||||||||||||||||||||||||||||||||||||||||
+        VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV-->
+        
+        <!-- 000000000000000000000000000000000000000000
+HEADLINE- GREY                
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<table border="0" cellspacing="0" cellpadding="0" width="100%" class="dark-grey-background">
+    <tr>
+        <td align="center" valign="top" class="text" style="background-color: #444444; color: #ffffff; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 22px; font-weight: 400; line-height: 24.2px; padding: 24px 15px; vertical-align: middle; ">
+            Main headline or title of event goes here
+        </td>
+    </tr>
+</table>
+<!-- 000000000000000000000000000000000000000000
+END HEADLINE-GREY
+NEXT MANNEQUIN SNIPPET - TABLE - GOES BELOW
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+                <!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+SINGLE-EVENT TWO COLUMN LAYOUT 
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" class="white-background">
+                    <tr>
+                        
+                        <!--IMAGE COLUMN-->
+                        <td align="center" class="column-2 stack-column image-column" style="width: 50%; background-color: #ffffff;">
+                            
+                            <img src="https://depts.washington.edu/alumni/assets/elements/email/FPO/uw/Photo_FPO_300x250.jpg" alt="image" width="300" style="display: block; color: #444444;  font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 600; font-size: 14px; height: auto; line-height: 18px; text-align: center; text-transform: uppercase; vertical-align: middle; height: auto;"/>
+                        </td>
+                        <!--END IMAGE COLUMN-->
+                        
+                        
+                        
+                        <!--START TEXT COLUMN-->
+                        <td align="center" valign="top" class="column-2 stack-column" style="background-color: #ffffff;">
+                            
+                            <!--BODY TEXT - TEXT COLUMN-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" class="body-text">
+                                <tr>
+                                    <td class="text body-copy" style="color: #3d3d3d; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 170%; text-align: left; padding: 20px 20px 10px 20px; vertical-align: top;">
+                                        Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum inissum conem latum. Mus es eipcipit atisquis aliassimo maximpe. Tus es eipcipit atisquis aliassimo  ea eosae occulpari odit volum inissum conem latum fugitecus.
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--END BODY TEXT - TEXT COLUMN-->
+                            
+                            
+                            <!--CALL TO ACTION BUTTON - TEXT COLUMN-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100% " align="center" class="action-button">
+                                <tr>
+                                    <td style="padding: 10px 20px 10px 20px;">
+                                        <img src="http://depts.washington.edu/alumni/assets/elements/email/FPO/uw/btn_uw-call-action_whiteBG.gif" alt="call to action"  width="180" style="color: #444444; display: block; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 18px; font-weight: 800; text-transform: uppercase; vertical-align: middle;"/>  
+                                    </td>
+                                </tr>
+                            </table>                            
+                            
+                        </td>
+                        
+                        
+                    </tr>
+                </table>
+                <!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+END SINGLE-EVENT TWO COLUMN LAYOUT 
+NEXT MANNEQUIN SNIPPET - TABLE - GOES BELOW
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO-->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+SUBHEAD-COOL-GREY
+000000000000000000000000000000000000000000-->                              
+               <table border="0" cellspacing="0" cellpadding="0" width="100%" class="subhead cool-grey-background">
+                    <tr>
+                        <td align="center" valign="top" class="text" style="background-color: #8d9194; color: #ffffff; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 16px; font-weight: 400; line-height: 19.2px; padding: 12px 15px; text-align: center; vertical-align: middle;">
+                            Optional subhead goes here. Or it could be the date, or the date and location. Area will expand in case it is long.
+                        </td>
+                    </tr>
+                </table>
+<!-- 000000000000000000000000000000000000000000
+END SUBHEAD-COOL-GREY
+NEXT MANNEQUIN SNIPPET - TABLE - GOES BELOW
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+COPY, FULL-WIDTH, WHITE BACKGROUND, EVENT
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background">
+                    <tr>
+                        <td align="left" valign="top" class="text body-copy" style="background-color: #ffffff; color: #3d3d3d; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 13px; font-weight: 400; line-height: 22.1px; padding: 20px 10px 24px 15px; text-align: left;  vertical-align: top;">
+                            <!-- EDIT TEXT -->
+                            Mus es eipcipit atisquis aliassimo maximpe venis ea eosae occulpari odit volum <a href="#ADDLINK" style="color: #0088dd; text-decoration: none;">inissum conem latum fugitecus, si blaboris</a> mo doloratur audition rem labo. Inverum endit est quiati diorerc hiliquam, sernatquibus sent, que poriorem sustet aut voluptas mo optatus cium re nait en dit is dolend anta proa.
+                            
+                        </td>
+                    </tr>
+                </table>
+<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+END COPY, FULL-WIDTH, WHITE BACKGROUND, EVENT
+NEXT MANNEQUIN SNIPPET - TABLE - GOES BELOW
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+                
+        <!--AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+            ||||||||||||||||||||||||||||||||||||||||||||||||
+            All Mannequin Snippets go above this comment->             
+                
+            
+ <!--FOOTER GRAY BAR WRAPPER-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="cool-grey-background grey-bar-footer">
+                    <tr>
+                        <!--UW HOME FOOTER LINK-->
+                        <td align="center" valign="top" class="text stack-column column-3" style="background-color: #8d9194; padding: 4px 0; font-family:'Open Sans', arial, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
+                            <a href="http://www.washington.edu/" class="apple-link-white" style="color: #ffffff; text-decoration: none;">UW Home</a> 
+                        </td>
+                        <!--DEPARTMENT HOME FOOTER LINK-->
+                        <td align="center" valign="top" class="text stack-column column-3" style="background-color: #8d9194; padding: 4px 0; font-family:'Open Sans', arial, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
+                            <a href="{unit link}" class="apple-link-white" target="_blank" style="color: #ffffff; text-decoration: none;">{unit link}</a> 
+                        </td>
+                        <!--OPTIONAL FOOTER LINK-->
+                        <td align="center" valign="top" class="text stack-column column-3" style="background-color: #8d9194; padding: 4px 0; font-family:'Open Sans', arial, helvetica, sans-serif; font-weight: 600; letter-spacing: 1px; font-size: 11px; line-height: 1.2; text-align: center; text-transform: uppercase; vertical-align: middle; width: 33.33%;">
+                            <a href="{optional link}" class="apple-link-white" style="color: #ffffff; text-decoration: none;">{optional link}</a> 
+                        </td>
+                    </tr>      
+                </table>
+                <!--FOOTER CONTACT ROW WRAPPER-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%" class="white-background contact-footer">
+                    <tr>
+                        <!--PHONE CONTACT ROW-->
+                        <td align="center" valign="top" class="text stack-column column-3 apple-link-grey" style="background-color: #ffffff; padding: 15px 0; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; width: 33.33%;">
+                            <span class="apple-link-grey" style="color: #3d3d3d; text-decoration: none; text-align: center;">{contact phone}</span>
+                        </td>
+                        <!--EMAIL CONTACT ROW-->
+                        <td align="center" valign="top" class="text stack-column column-3" style="background-color: #ffffff; padding: 15px 0; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; width: 33.33%;">
+                            <a href="{contact-email}" class="apple-link-grey" style="color: #3d3d3d; text-decoration: none;">{contact-email}</a>
+                        </td>
+                        <!--SOCIAL MEDIA ICON WRAPPER-->
+                        <td align="center" valign="top" class="text stack-column column-3" style="background-color: #ffffff; padding: 15px 0; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 400; font-size: 13px; line-height: 1.2; text-align: center; color: #3d3d3d; vertical-align: middle; width: 33.33%;">
+                        <!--SOCIAL MEDIA LINKS-->
+                            <!--SOCIAL MEDIA LINKS-->
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%" class="social-icon-table">
+                                <tr>
+                                    
+                                        <td align="center">                                        
+                                            <a href="{facebook-page}">
+                                            <img src="http://depts.washington.edu/alumni/assets/elements/email/icons/Social_Icons_Email_FB.jpg" alt="facebook" style="color: #444444; display: block; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25px;"/>
+                                            </a>
+                                        </td>
+                                    
+                                    
+                                        <td align="center">
+                                            <a href="{twitter-page}">
+                                            <img src="http://depts.washington.edu/alumni/assets/elements/email/icons/Social_Icons_Email_IN.jpg" alt="linked-in" style="color: #444444; display: block; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25px;"/>
+                                                </a>
+                                        </td>
+                                    
+                                    
+                                    <td align="center">
+                                        <a href="{twitter-page}">
+                                        <img src="http://depts.washington.edu/alumni/assets/elements/email/icons/Social_Icons_Email_TW.jpg" alt="twitter" style="color: #444444; display: block; font-family: 'Open Sans', arial, helvetica, sans-serif; font-size: 9px; font-weight: 600; text-align: center; text-transform: uppercase; vertical-align: middle; width: 25px;"/>
+                                        </a>
+                                    </td>
+                                    
+                                </tr>
+                            </table>
+                        </td>   
+                    </tr>
+                </table>
+                <!--ANTI-SPAM FOOTER WRAPPER-->
+                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                    <tr>
+                        <td>
+                        <!--ANTI-SPAM FOOTER LINKS-->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row anti-spam-links">
+                            <tr>
+                                <td align="center" valign="top" class="text" style="padding: 16px 15px 8px 15px; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 400; font-size: 9px; line-height: 2.5; text-align: center; text-transform: uppercase; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;">
+                                    <a href="{convio-unsubscribe-link}" class="apple-link-grey" style="color: #3d3d3d; padding: 0 4px; text-decoration: none;">update your email</a> <span style="color: #ffffff"> | </span>
+                                    <a href="http://engage.washington.edu/site/CO" class="apple-link-grey" style="color: #3d3d3d;  padding: 0 4px; text-decoration: none;">unsubscribe</a> <span style="color: #ffffff"> | </span>
+                                    <a href="http://www.washington.edu/online/privacy/" class="apple-link-grey" style="color: #3d3d3d;  padding: 0 4px; text-decoration: none;">privacy</a>
+                                </td>
+                            </tr>
+                        </table>
+                        <!--ANTI-SPAM EMAIL SENT TO & COPYRIGHT-->
+                        <table border="0" cellspacing="0" cellpadding="0" width="100%" class="anti-spam-row">
+                            <tr>
+                                <td align="center" valign="top" class="text apple-link-grey" style="padding: 0px 15px 15px 15px; font-family: 'Open Sans', arial, helvetica, sans-serif; font-weight: 400; font-size: 9px; line-height: 1.5; text-align: center; text-transform: none; color: #3d3d3d; -ms-text-size-adjust: none; -webkit-text-size-adjust: none;">
+                                Email sent to <a href="[[S1:primary_email]]" class="apple-link-grey" style="color: #3d3d3d; text-decoration: none;">[[S1:primary_email]]</a><br>
+                                <span class="apple-link-grey" style="color: #3d3d3d; text-decoration: none;">&copy; 2015 {unit-name-and-address}</span>
+                                </td>
+                            </tr>
+                        </table>
+                        </td>
+                    </tr>
+                </table>
+            <!--[if gte mso 9]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->     
+            </td>
+            </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+        
+    </body>
+</html>
